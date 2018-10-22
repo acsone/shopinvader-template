@@ -41,11 +41,12 @@ seo_title: Shipping address | Shopinvader demo
         <div class="checkbox">
           <label>
             <input type="checkbox" id="use_specific_address" {{input_specific_address}} value="1" data-toggle="collapse" data-target="#invoice_address" autocomplete="off">
-            {% editable_text different_invoice_address, fixed: true, rows: 1 %}
+            {% editable_text checkout_button, fixed: true, rows: 1 %}
               Use different invoice address.
             {% endeditable_text %}
           </label>
         </div>
+
         <div class="collapse {{collapse_specific_address}}" id="invoice_address">
           <h2>{{'cart_invoice_address' | translate}}</h2>
           {% include "address_book" with

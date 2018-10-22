@@ -111,3 +111,4 @@ metafields:
           "default_locale": "en-EN"
         }
       }
+    is_guest_mode_allowed: 'true'
